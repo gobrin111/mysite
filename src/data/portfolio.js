@@ -11,13 +11,14 @@ export const profile = {
   github: 'https://github.com/gobrin111',
   linkedin: 'https://www.linkedin.com/in/qi-p-b39150206/',
   introduction:
-    'I build high-performance software and data-driven systems, with a focus on turning complex technical problems into fast, reliable tools.',
+    'Hi, I set up this page mainly to organize some projects that I thought were interesting and worth sharing.',
 }
 
 export const projects = [
   {
     number: '01',
     title: 'Realtime Screen Magnification Tool',
+    repository: 'https://github.com/gobrin111/ScreenMagnifier',
     stack: ['Python', 'OpenGL', 'Win32 API'],
     description:
       'A GPU-accelerated desktop magnifier running at 60 FPS, designed to reduce eye strain in high-field-of-view applications.',
@@ -26,8 +27,8 @@ export const projects = [
       'Built always-on-top layering and screen-capture exclusion with the Win32 compositing pipeline.',
     ],
     details: {
-      heading: 'Project details coming soon',
-      body: 'This space will hold a deeper look at the problem, design process, technical decisions, and final outcome.',
+      heading: 'Screen magnification for gaming',
+      body: 'To reduce physical strain while playing certain games, this application provides a responsive magnification solution.',
       images: [
         {
           src: magnifierPanel,
@@ -55,6 +56,7 @@ export const projects = [
   {
     number: '02',
     title: 'Campus Restaurant API',
+    repository: 'https://github.com/gobrin111/replace-with-restaurant-api-repository',
     stack: ['Python', 'PHP', 'MySQL'],
     description:
       'A performance-focused restaurant data API optimized for efficient responses under concurrent demand.',

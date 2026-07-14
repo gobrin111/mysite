@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Container } from '../components/layout/Container.jsx'
 import { projects } from '../data/portfolio.js'
+import githubIcon from '../assets/images/github-white-icon.svg'
 
 export function SelectedWork() {
   const [openProjects, setOpenProjects] = useState(new Set())
@@ -24,7 +25,7 @@ export function SelectedWork() {
       <Container>
         <div className="section-heading">
           <p className="section-label">Selected work</p>
-          <h2 id="work-title">Projects built for performance.</h2>
+          <h2 id="work-title">Projects</h2>
         </div>
         <div className="project-list">
           {projects.map((project) => {
@@ -68,6 +69,22 @@ export function SelectedWork() {
                       <ul>
                         {project.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}
                       </ul>
+                      <a
+                        className="project__repository-link"
+                        href={project.repository}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`View ${project.title} on GitHub`}
+                      >
+                        <img
+                          className="project__repository-icon"
+                          src={githubIcon}
+                          alt=""
+                          aria-hidden="true"
+                        />
+                        <span>View repository</span>
+                        <span aria-hidden="true">↗</span>
+                      </a>
                     </div>
                     <div className="project__gallery">
                       {project.details.images.map((image, index) => (

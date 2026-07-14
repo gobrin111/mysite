@@ -12,8 +12,8 @@ export function Hero() {
         </div>
 
         <div className="hero__content">
-          <p className="hero__intro">Hello, I’m {profile.name}.</p>
-          <h1 id="hero-title">Software engineer</h1>
+          <p className="hero__intro">{profile.name}</p>
+          <h1 id="hero-title">:)</h1>
           <p className="hero__summary">{profile.introduction}</p>
           <ArrowLink href="#work">Explore selected work</ArrowLink>
         </div>

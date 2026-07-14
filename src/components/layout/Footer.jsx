@@ -7,15 +7,19 @@ export function Footer() {
       <Container>
         <p className="section-label">Contact</p>
         <div className="footer__headline">
-          <h2>Let’s build something useful.</h2>
-          <a href={`mailto:${profile.email}`}>{profile.email} ↗</a>
+          <h2>Get in touch.</h2>
+          <div className="footer__contact-links">
+            <a href={`mailto:${profile.email}`}>{profile.email} ↗</a>
+            <a href={profile.linkedin} target="_blank" rel="noreferrer">
+              LinkedIn ↗
+            </a>
+            <a href={profile.github} target="_blank" rel="noreferrer">
+              GitHub ↗
+            </a>
+          </div>
         </div>
         <div className="footer__bottom">
           <span>© {new Date().getFullYear()} {profile.name}</span>
-          <div className="footer__links">
-            <a href={profile.github} target="_blank" rel="noreferrer">GitHub</a>
-            <a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
-          </div>
         </div>
       </Container>
     </footer>
