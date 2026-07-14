@@ -7,7 +7,7 @@ export function About() {
       <Container>
         <div className="section-heading">
           <p className="section-label">Background</p>
-          <h2 id="about-title">Engineering grounded in computer science.</h2>
+          <h2 id="about-title">computer science</h2>
         </div>
         <div className="about__grid">
           <div>
