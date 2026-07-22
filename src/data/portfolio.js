@@ -56,7 +56,7 @@ export const projects = [
   {
     number: '02',
     title: 'Campus Restaurant API',
-    repository: 'https://github.com/gobrin111/replace-with-restaurant-api-repository',
+    repository: 'https://github.com/cse442-at-ub/sp25-repo-alt-f4',
     stack: ['Python', 'PHP', 'MySQL'],
     description:
       'A performance-focused restaurant data API optimized for efficient responses under concurrent demand.',
